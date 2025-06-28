@@ -1,0 +1,31 @@
+{
+    "github.copilot.chat.codeGeneration.instructions": [
+        {
+            "file": ".copilot/csharp.md"
+        },
+        {
+            "file": ".copilot/infra.md"
+        },
+        {
+            "file": ".copilot/python.md"
+        }
+    ],
+    "mcp": {
+        "servers": {
+            "sequentialthinking": {
+                "command": "npx",
+                "args": [
+                    "-y",
+                    "@modelcontextprotocol/server-sequential-thinking"
+                ]
+            },
+            "fetch": {
+                "command": "python3.11",
+                "args": [
+                    "-m",
+                    "mcp_server_fetch"
+                ]
+            }
+        }
+    }
+}
